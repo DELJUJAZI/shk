@@ -1,0 +1,19 @@
+{
+  "resources": {
+    "regenerator-runtime": {
+      "globals": {
+        "regeneratorRuntime": "write"
+      }
+    },
+    "obs-store": {
+      "globals": {
+        "localStorage": true
+      }
+    },
+    "web3": {
+      "globals": {
+        "Web3": "write"
+      }
+    }
+  }
+}
