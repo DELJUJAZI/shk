@@ -1,0 +1,59 @@
+.secure-your-wallet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1000px;
+  max-height: 1300px;
+
+  &__details {
+    max-width: 550px;
+    padding-inline-end: 10px;
+  }
+
+  &__actions {
+    button {
+      margin: 16px;
+    }
+  }
+
+  &__list {
+    list-style: disc inside;
+
+    li {
+      font-size: 18px;
+    }
+  }
+
+  &__highlighted {
+    background-color: var(--color-primary-muted);
+    padding: 12px;
+    border-radius: 10px;
+  }
+}
+
+.skip-srp-backup-popover {
+  width: 365px;
+
+  &__icon {
+    color: var(--color-error-default);
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  &__checkbox {
+    margin: 8px 12px 0 0;
+  }
+
+  &__label {
+    display: flex;
+  }
+
+  &__footer {
+    button {
+      width: 140px;
+      margin: 0 10px;
+    }
+  }
+}

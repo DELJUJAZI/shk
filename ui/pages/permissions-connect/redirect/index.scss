@@ -1,0 +1,50 @@
+.permissions-redirect {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+
+  &__result {
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    color: var(--color-text-default);
+  }
+
+  &__icons {
+    display: flex;
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 90%;
+      left: 5%;
+      top: 50%;
+      border: 1px solid var(--color-border-muted);
+      border-style: dashed;
+      z-index: -1;
+    }
+  }
+
+  .icon-border {
+    max-width: 64px;
+    flex: 0 0 64px;
+  }
+
+  &__line {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__check {
+    color: var(--color-success-default);
+    border-radius: 50%;
+    background-color: var(--color-background-default);
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
