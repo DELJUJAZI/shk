@@ -1,0 +1,30 @@
+{
+  "resources": {
+    "regenerator-runtime": {
+      "environment": false,
+      "globals": {
+        "regeneratorRuntime": "write"
+      }
+    },
+    "obs-store": {
+      "globals": {
+        "localStorage": true
+      }
+    },
+    "web3": {
+      "globals": {
+        "Web3": "write"
+      }
+    },
+    "browser-passworder": {
+      "globals": {
+        "crypto.subtle": true
+      }
+    },
+    "@sentry/utils": {
+      "globals": {
+        "console": true
+      }
+    }
+  }
+}
