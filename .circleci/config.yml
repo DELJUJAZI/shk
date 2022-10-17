@@ -1,0 +1,35 @@
+version: 2.1
+
+workflows:
+  test_and_release:
+    jobs:
+      - prep-build-mac
+      - build-mac-test:
+          requires:
+            - prep-build-mac
+
+jobs:
+  prep-build-mac:
+    macos:
+      xcode: 11.7.0
+    steps:
+      - checkout
+      - run:
+          name: Install deps
+          command: |
+            .circleci/scripts/deps-install.sh
+      - persist_to_workspace:
+          root: .
+          paths:
+            - node_modules
+            - build-artifacts
+
+  build-mac-test:
+    macos:
+      xcode: 11.7.0
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+      - run:
+          command: yarn lavamoat:auto
