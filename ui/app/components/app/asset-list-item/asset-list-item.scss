@@ -1,0 +1,19 @@
+.asset-list-item {
+  &__container {
+    display: flex;
+    padding: 24px 16px;
+    align-items: center;
+
+    &--active {
+      background: #D9D7DA;
+    }
+  }
+
+  &__balance {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    flex: 1;
+    min-width: 0;
+  }
+}
