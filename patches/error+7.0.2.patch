@@ -1,0 +1,15 @@
+diff --git a/node_modules/error/typed.js b/node_modules/error/typed.js
+index fe9effd..3b86441 100644
+--- a/node_modules/error/typed.js
++++ b/node_modules/error/typed.js
+@@ -17,10 +17,6 @@ function TypedError(args) {
+         'TypedError: fullType field is reserved');
+ 
+     var message = args.message;
+-    if (args.type && !args.name) {
+-        var errorName = camelCase(args.type) + 'Error';
+-        args.name = errorName[0].toUpperCase() + errorName.substr(1);
+-    }
+ 
+     extend(createError, args);
+     createError._name = args.name;
