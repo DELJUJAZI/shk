@@ -1,0 +1,9 @@
+@import 'tab/index';
+
+.tabs {
+  &__list {
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid $geyser;
+  }
+}

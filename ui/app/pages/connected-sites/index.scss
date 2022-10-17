@@ -1,0 +1,22 @@
+.connected-sites {
+  &__confirmation {
+    button:first-child {
+      margin-right: 24px;
+    }
+  }
+
+  &__add-site-manually {
+    margin-top: -1px;
+    font-size: 14px;
+    line-height: 20px;
+
+    & :only-child {
+      margin: 0;
+    }
+
+    a, a:hover {
+      cursor: pointer;
+      color: #037DD6;
+    }
+  }
+}
