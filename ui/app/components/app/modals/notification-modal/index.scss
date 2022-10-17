@@ -1,0 +1,58 @@
+.notification-modal {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    border: 1px solid $alto;
+    box-shadow: 0 0 2px 2px $alto;
+  }
+
+  &__header {
+    @include H4;
+
+    background: $wild-sand;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    color: $nile-blue;
+  }
+
+  &__message {
+    @include Paragraph;
+
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: $nile-blue;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 24px;
+    padding: 0 42px;
+
+    &__btn {
+      cursor: pointer;
+    }
+  }
+
+  &__link {
+    color: $primary-blue;
+  }
+
+  .modal-close-x::after {
+    content: '\00D7';
+    font-size: 2em;
+    color: $dusty-gray;
+    position: absolute;
+    top: 25px;
+    right: 17.5px;
+    cursor: pointer;
+  }
+}
